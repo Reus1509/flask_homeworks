@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    {% block styles %}
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+    {% endblock %}
+</head>
+<body>
+  <header class="header">
+    <nav class = "navigation">
+      <a class = "menu_point" href="http://127.0.0.1:5000/">Главная</a>
+      <a class = "menu_point" href="http://127.0.0.1:5000/clothes">Одежда</a>
+      <a class = "menu_point" href="http://127.0.0.1:5000/shoes">Обувь</a>
+      <a class = "menu_point" href="http://127.0.0.1:5000/jacket">Куртки</a>
+    </nav>
+  </header>
+  <div class = "content">
+    {% block content %}
+    {% endblock %}
+  </div>
+  <footer class = 'footer'>
+    <p>Симферополь 2023г</p>
+  </footer>
+</body>
+</html>
