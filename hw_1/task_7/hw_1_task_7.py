@@ -33,7 +33,7 @@ def index():
          }
     ]
 
-    return render_template('index.html', context=context)
+    return render_template('login_form.html', context=context)
 
 
 if __name__ == "__main__":
