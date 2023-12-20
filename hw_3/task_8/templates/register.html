@@ -1,0 +1,13 @@
+{%extends 'index.html'%}
+
+{%block title%}Регистрация{%endblock%}
+
+{%block content%}
+    <form  method="post">
+        <input type="text" name="login" placeholder="Логин">
+        <input type="email" name="email" placeholder="email">
+        <input type="password" name="password_1" placeholder="Пароль">
+        <input type="password" name="password_2" placeholder="Подтверждение пароля">
+        <input type="submit" name="submit" placeholder="Зарегистрироваться">
+    </form>
+{%endblock%}
